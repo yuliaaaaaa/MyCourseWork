@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 148935464}
   - component: {fileID: 148935463}
   - component: {fileID: 148935462}
+  - component: {fileID: 148935466}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -273,6 +274,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &148935466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148935461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129785af2dcc9bd4fa792135ae73d87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDisplay: {fileID: 151633139}
 --- !u!1 &151633137
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,8 +321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189, y: -25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.0031891, y: 0.00018692}
+  m_SizeDelta: {x: 289.78, y: 66.147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151633139
 MonoBehaviour:
@@ -330,7 +344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: no name
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -364,8 +378,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -393,7 +407,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 43.65674, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.4927063, w: 0.000061035156}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1364,8 +1378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 120.5, y: -62.5}
-  m_SizeDelta: {x: 1167, y: 481}
+  m_AnchoredPosition: {x: 173.76135, y: -62.5}
+  m_SizeDelta: {x: 1845.353, y: 481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800609890
 MonoBehaviour:
@@ -3270,7 +3284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game_over: {fileID: 1059304681}
-  playerDisplay: {fileID: 151633139}
 --- !u!114 &1859193611
 MonoBehaviour:
   m_ObjectHideFlags: 0

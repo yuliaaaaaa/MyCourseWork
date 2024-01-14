@@ -24,7 +24,7 @@ public class LogIn : MonoBehaviour
         form.AddField("name", nameField.text);
         form.AddField("password", passwordField.text);
 
-        UnityWebRequest www = UnityWebRequest.Get("http://localhost/sqlconnect/login.php");
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/login.php", form);
         yield return www.SendWebRequest();
         Debug.Log(www.downloadHandler.text);
 

@@ -9,18 +9,10 @@ public class GameManager : MonoBehaviour
 {
     public GameObject game_over;
 
-    public TMP_Text playerDisplay;
-
-
-    private void Start()
+    public void Start()
     {
         Time.timeScale = 1;
 
-        if (DBManager.LoggedIn)
-        {
-            playerDisplay.text = "Player" + DBManager.username;
-
-        }
     }
     public void StartGame()
     {
