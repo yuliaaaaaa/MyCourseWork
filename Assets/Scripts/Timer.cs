@@ -30,7 +30,6 @@ public class StopwatchScript : MonoBehaviour
 
             }
 
-            // Додайте перевірку тут
             CheckPositionAndPauseTimer();
         }
     }
@@ -54,7 +53,7 @@ public class StopwatchScript : MonoBehaviour
         }
     }
 
-    // Новий метод для перевірки позиції та призупинення таймера
+    //метод для перевірки позиції та призупинення таймера
     private void CheckPositionAndPauseTimer()
     {
         // Отримайте посилання на FlyBehavior
@@ -65,7 +64,6 @@ public class StopwatchScript : MonoBehaviour
         {
             // Якщо умова виконується, призупиніть таймер
             PauseResumeTimer(true);
-           // BDConection.ReceiveValue(inf);
         }
     }
 

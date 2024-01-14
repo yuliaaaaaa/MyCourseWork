@@ -1,23 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BDConection : MonoBehaviour
+public class ExitGame : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // ¬икликаЇтьс€ при кл≥ку на об'Їкт, до €кого прикр≥плений цей скрипт
+    public void ExitGameButtonClicked()
+    {
+        // ¬иходить з гри
+        Application.Quit();
 
-    public void ReceiveValue(int receivedValue)
-    {
-        // ќбробл€йте отримане значенн€ тут
-        Debug.Log("Received value: " + receivedValue);
-    }
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+#if UNITY_EDITOR
+        // ÷ей блок коду дл€ в≥длагодженн€ в редактор≥ Unity
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
