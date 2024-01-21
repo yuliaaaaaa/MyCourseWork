@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LogInScene.unity
     guid: 59338bf2b5613fa419766d02385bd5fd
+  - enabled: 1
+    path: Assets/Scenes/Donate.unity
+    guid: f5715e76e81012f45b87b23cb6399a53
   m_configObjects: {}

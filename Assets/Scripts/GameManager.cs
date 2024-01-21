@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
+
     public void ExitGameButtonClicked()
     {
         // Виходить з гри

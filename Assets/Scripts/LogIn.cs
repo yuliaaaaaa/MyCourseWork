@@ -32,7 +32,7 @@ public class LogIn : MonoBehaviour
         {
             DBManager.username = nameField.text;
             DBManager.score = int.Parse(www.downloadHandler.text.Split('\t')[1]);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
 
         }
         else

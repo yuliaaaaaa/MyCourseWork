@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class ExitGame : MonoBehaviour
 {
-    // Викликається при кліку на об'єкт, до якого прикріплений цей скрипт
+    // Р’РёРєР»РёРєР°С”С‚СЊСЃСЏ РїСЂРё РєР»С–РєСѓ РЅР° РѕР±'С”РєС‚, РґРѕ СЏРєРѕРіРѕ РїСЂРёРєСЂС–РїР»РµРЅРёР№ С†РµР№ СЃРєСЂРёРїС‚
     public void ExitGameButtonClicked()
     {
-        // Виходить з гри
+        // Р’РёС…РѕРґРёС‚СЊ Р· РіСЂРё
         Application.Quit();
 
 #if UNITY_EDITOR
-        // Цей блок коду для відлагодження в редакторі Unity
+        // Р¦РµР№ Р±Р»РѕРє РєРѕРґСѓ РґР»СЏ РІС–РґР»Р°РіРѕРґР¶РµРЅРЅСЏ РІ СЂРµРґР°РєС‚РѕСЂС– Unity
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }

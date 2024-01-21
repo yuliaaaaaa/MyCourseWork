@@ -13,7 +13,7 @@ public class UserTable : MonoBehaviour
 
         if (DBManager.LoggedIn)
         {
-            playerDisplay.text = "Player" + DBManager.username;
+            playerDisplay.text = "Player: " + DBManager.username;
 
         }
     }
