@@ -52,17 +52,12 @@ public class StopwatchScript : MonoBehaviour
             stopwatch.Start();
         }
     }
-
-    //метод для перевірки позиції та призупинення таймера
     private void CheckPositionAndPauseTimer()
     {
-        // Отримайте посилання на FlyBehavior
         FlyBehavior flyBehavior = GetComponent<FlyBehavior>();
-
-        // Перевірте умову з FlyBehavior
+        
         if (flyBehavior != null && (flyBehavior.transform.position.x <= -13.5f || flyBehavior.transform.position.y <= -3.9f || flyBehavior.transform.position.y >= 6f))
         {
-            // Якщо умова виконується, призупиніть таймер
             PauseResumeTimer(true);
         }
     }

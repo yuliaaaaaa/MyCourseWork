@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class ExitGame : MonoBehaviour
 {
     // Викликається при кліку на об'єкт, до якого прикріплений цей скрипт

@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public static class DBManager
 {
     public static string username;
-    public static int score;
+    public static string password;
+    public static int score = (UIUpdaterScript.score);
+
 
     public static bool LoggedIn
     {

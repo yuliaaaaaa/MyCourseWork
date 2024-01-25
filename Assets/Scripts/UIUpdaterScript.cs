@@ -1,13 +1,13 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class UIUpdaterScript : MonoBehaviour
 {
-    // Змінна для зберігання іншого скрипта
     public StopwatchScript stopwatchScript;
-
-    // Змінна для TextMeshProUGUI
     private TextMeshProUGUI textMeshProUGUIComponent;
+
+    static public int score;
 
     void Start()
     {
@@ -15,32 +15,31 @@ public class UIUpdaterScript : MonoBehaviour
 
         if (stopwatchScript == null)
         {
-            Debug.LogError("Скрипт StopwatchScript не знайдено. Додайте компонент до об'єкта!");
+            Debug.LogError("пїЅпїЅпїЅпїЅпїЅпїЅ StopwatchScript пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ'пїЅпїЅпїЅпїЅ!");
         }
 
         if (textMeshProUGUIComponent == null)
         {
-            Debug.LogError("Компонент TextMeshProUGUI не знайдено. Додайте компонент до об'єкта!");
+            Debug.LogError("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ TextMeshProUGUI пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ'пїЅпїЅпїЅпїЅ!");
         }
     }
 
     void Update()
     {
-        // Оновлення інтерфейсу
         if (stopwatchScript != null && textMeshProUGUIComponent != null)
         {
             float elapsedTime = stopwatchScript.GetElapsedTime();
             textMeshProUGUIComponent.text = "Time: " + elapsedTime.ToString("F0") + " sec";
-            //ПІДКЛЮЧЕННЯ ДО БД---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            score = Convert.ToInt32(elapsedTime);
         }
     }
-
-    // Метод для оновлення значення секунд
+    
     public void UpdateElapsedTime(float elapsedTime)
     {
         if (textMeshProUGUIComponent != null)
         {
-            textMeshProUGUIComponent.text = "Час: " + elapsedTime.ToString("F0") + " с";
+            textMeshProUGUIComponent.text = "пїЅпїЅпїЅ: " + elapsedTime.ToString("F0") + " пїЅ";
         }
     }
 }

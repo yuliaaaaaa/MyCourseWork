@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -31,6 +29,7 @@ public class LogIn : MonoBehaviour
         if (www.downloadHandler.text[0] == '0')
         {
             DBManager.username = nameField.text;
+            DBManager.password = passwordField.text;
             DBManager.score = int.Parse(www.downloadHandler.text.Split('\t')[1]);
             UnityEngine.SceneManagement.SceneManager.LoadScene(6);
 

@@ -1,23 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject game_over;
+    private RecordRecords updateRecords = new RecordRecords();
 
     public void Start()
     {
         Time.timeScale = 1;
-
-    }
-    public void StartGame()
-    {
-
-        SceneManager.LoadScene(1);
 
     }
 
@@ -25,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         game_over.SetActive(true);
         Time.timeScale = 0;
+        updateRecords.CallRecords();
     }
 
     public void Replay()
@@ -60,11 +52,11 @@ public class GameManager : MonoBehaviour
 
     public void ExitGameButtonClicked()
     {
-        // Виходить з гри
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
         Application.Quit();
 
 #if UNITY_EDITOR
-        // Цей блок коду для відлагодження в редакторі Unity - при збірці ігноруватиметься
+        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Unity - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
