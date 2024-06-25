@@ -1026,9 +1026,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1476999753}
-        m_TargetAssemblyTypeName: LogIn, Assembly-CSharp
-        m_MethodName: CallLogin
+      - m_Target: {fileID: 1494846666}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Replay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3474,7 +3474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game_over: {fileID: 0}
-  playerDisplay: {fileID: 0}
 --- !u!4 &1494846667
 Transform:
   m_ObjectHideFlags: 0

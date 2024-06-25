@@ -28,7 +28,7 @@ public class Registration : MonoBehaviour
             yield return www.SendWebRequest();
             if (www.result == UnityWebRequest.Result.Success)
             {
-                Debug.Log("Server response: " + www.downloadHandler.text); // Вивести всю відповідь сервера
+                Debug.Log("Server response: " + www.downloadHandler.text); // Р’РёРІРµСЃС‚Рё РІСЃСЋ РІС–РґРїРѕРІС–РґСЊ СЃРµСЂРІРµСЂР°
                 if (www.downloadHandler.text == "0") 
                 {
                     Debug.Log("User created successfully!");

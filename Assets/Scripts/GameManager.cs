@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject game_over;
 
-    public void Start()
+    private void Start()
     {
         Time.timeScale = 1;
 
@@ -60,11 +60,11 @@ public class GameManager : MonoBehaviour
 
     public void ExitGameButtonClicked()
     {
-        // Виходить з гри
+        // Р’РёС…РѕРґРёС‚СЊ Р· РіСЂРё
         Application.Quit();
 
 #if UNITY_EDITOR
-        // Цей блок коду для відлагодження в редакторі Unity - при збірці ігноруватиметься
+        // Р¦РµР№ Р±Р»РѕРє РєРѕРґСѓ РґР»СЏ РІС–РґР»Р°РіРѕРґР¶РµРЅРЅСЏ РІ СЂРµРґР°РєС‚РѕСЂС– Unity - РїСЂРё Р·Р±С–СЂС†С– С–РіРЅРѕСЂСѓРІР°С‚РёРјРµС‚СЊСЃСЏ
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
